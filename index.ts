@@ -67,12 +67,13 @@ const generateRandomTrick = () => {
   switch (chosenSport) {
     case "skateboard":
       return generateSkateboardTrick();
-
     default:
       return null;
   }
 };
 
-if (trickNameParagraph) {
-  trickNameParagraph.innerHTML = generateRandomTrick() || "";
-}
+const writeTrickToHml = () => {
+  if (trickNameParagraph) {
+    trickNameParagraph.innerHTML = generateRandomTrick() || "";
+  }
+};

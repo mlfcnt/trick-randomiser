@@ -55,6 +55,8 @@ const generateRandomTrick = () => {
             return null;
     }
 };
-if (trickNameParagraph) {
-    trickNameParagraph.innerHTML = generateRandomTrick() || "";
-}
+const writeTrickToHml = () => {
+    if (trickNameParagraph) {
+        trickNameParagraph.innerHTML = generateRandomTrick() || "";
+    }
+};
